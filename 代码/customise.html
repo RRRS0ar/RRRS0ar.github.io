@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Customise a shirt: name and number | KITVAULT</title>
+
+  <meta name="description" content="Choose a club, write a name of up to twelve letters, pick a number from 1 to 99 and a size from S to 2XL. See how the print looks on the back before you order.">
+
+  <!-- The fonts live in style.css. These two lines only save a round trip. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>Shop in Helsinki &#183; delivery to Finland and the EU</span>
+      <span>Printing takes two to three working days</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        KITVAULT
+      </a>
+
+      <nav class="nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="customise.html" aria-current="page">Customise</a></li>
+          <li><a href="shop.html#size-guide">Size guide</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="You are here">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Customise</li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h1>Customise</h1>
+          <p class="lede">Four choices: the club, the name, the number and the size. The picture shows how the print sits on the back before you send anything.</p>
+        </div>
+      </div>
+
+      <div class="wrap split">
+
+        <!-- Left: the picture and the steps. -->
+        <div>
+          <img src="images/back-number.jpg" width="800" height="600"
+               alt="Back of a navy football shirt with a large white number 10 printed in the middle">
+
+          <p class="hint">Drawing of the print we make: one colour, 30 cm tall, centred between the shoulder blades, 4 cm under the collar. Not a photo of a real shirt.</p>
+
+          <h2>How it works</h2>
+
+          <ol class="steps">
+            <li><span class="num">1</span><strong>Pick the club.</strong> The club sets the shirt colour and the badge on the chest.</li>
+            <li><span class="num">2</span><strong>Write the name.</strong> Twelve letters is the limit. Capitals stay as you type them.</li>
+            <li><span class="num">3</span><strong>Choose a number.</strong> Anything from 1 to 99. Two digits print narrower than one.</li>
+            <li><span class="num">4</span><strong>Check the size, then send.</strong> The size table is on the Shop page. We confirm the stock before you pay.</li>
+          </ol>
+
+          <p><a href="shop.html#size-guide">Open the size table</a></p>
+        </div>
+
+        <!-- Right: the order form. -->
+        <div>
+          <!-- action="mailto:" again: no server, the button opens the
+               e-mail app with the order ready to send. -->
+          <form class="form" action="mailto:shop@kitvault.fi?subject=New%20shirt%20order" method="post" enctype="text/plain">
+            <div class="field field--full">
+              <label for="club">Club</label>
+              <select id="club" name="club">
+                <option>HJK Helsinki</option>
+                <option>FC Inter Turku</option>
+                <option>KuPS</option>
+                <option>Haka</option>
+                <option>Honka</option>
+                <option>No club, plain shirt</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="name">Name on the back</label>
+              <input type="text" id="name" name="name" maxlength="12" required placeholder="RAO">
+              <p class="hint">Up to 12 letters. We print what you write.</p>
+            </div>
+
+            <div class="field">
+              <label for="number">Number</label>
+              <input type="number" id="number" name="number" min="1" max="99" required placeholder="10">
+              <p class="hint">1 to 99. No 0 and no 00.</p>
+            </div>
+
+            <div class="field">
+              <label for="shirt-size">Size</label>
+              <select id="shirt-size" name="size">
+                <option>S &#8211; chest 88&#8211;92 cm</option>
+                <option>M &#8211; chest 96&#8211;100 cm</option>
+                <option>L &#8211; chest 104&#8211;108 cm</option>
+                <option>XL &#8211; chest 112&#8211;116 cm</option>
+                <option>2XL &#8211; chest 120&#8211;124 cm</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="quantity">How many</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="3" value="1">
+              <p class="hint">Three is the limit, because we print by hand.</p>
+            </div>
+
+            <div class="field field--full">
+              <button class="btn" type="submit">Add to bag</button>
+            </div>
+          </form>
+
+          <h2>What it costs</h2>
+
+          <div class="price-box">
+            <p class="price-row"><span>Shirt</span><span>&euro;69.00</span></p>
+            <p class="price-row"><span>Name and number</span><span>&euro;15.00</span></p>
+            <p class="price-row"><span>Postage, Finland</span><span>&euro;4.90</span></p>
+            <p class="price-row price-row--total"><span>Total</span><span>&euro;88.90</span></p>
+          </div>
+
+          <p class="hint">Same price for every club, every name length and every number. Postage is free over 80 euros before the shirt is added.</p>
+
+          <p class="notice">This page does not take money. The button sends the order by e-mail, a person checks the shelf, and you pay only after we write back that your size is there.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-title">KITVAULT</p>
+          <p>Football shirts from Helsinki. Real stock, real sizes, printed in the shop.</p>
+          <p><a href="mailto:shop@kitvault.fi">shop@kitvault.fi</a></p>
+        </div>
+
+        <div>
+          <p class="footer-title">Pages</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="customise.html">Customise</a></li>
+            <li><a href="shop.html#size-guide">Size guide</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-title">Help</p>
+          <ul class="footer-links">
+            <li><a href="mailto:shop@kitvault.fi?subject=Size%20question">Ask about a size</a></li>
+            <li><a href="mailto:shop@kitvault.fi?subject=Return%20or%20postage">Returns and postage</a></li>
+            <li>English &#183; Finnish version coming later</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="made">Made with AI help: the text and the code were drafted with an AI assistant (Doubao), then read, corrected and tested by the student. The plan, the colours and the layout decisions come from the site plan. All three pictures are drawings, not club photos, and all stock numbers and prices are example data for the course project. Every link and anchor was checked with a script on 26 November 2026, and the three pages were opened in the browser.</p>
+
+      <p class="copyright">&copy; 2026 KITVAULT, Helsinki &#183; student project for DIG0011T1AE &#183; no payments are taken on this site</p>
+    </div>
+  </footer>
+</body>
+</html>
+</content>

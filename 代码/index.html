@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The title is what shows in the browser tab and in search results. -->
+  <title>KITVAULT | Real football shirts, printed in Helsinki</title>
+
+  <!-- The description is the two lines under a search result. -->
+  <meta name="description" content="KITVAULT sells real football shirts from Helsinki. Every card shows the price, the real stock number and the chest size in centimetres, and the name and number are printed on the back.">
+
+  <!-- The fonts are imported at the top of style.css, so no font
+       stylesheet here. These two lines only warm up the connection. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- All the styling lives in this one file. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Only seen when someone presses Tab instead of using a mouse. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>Shop in Helsinki &#183; delivery to Finland and the EU</span>
+      <span>Real stock numbers on every shirt</span>
+    </div>
+  </div>
+
+  <!-- The header is the same on all three pages. Copy it, change
+       only the aria-current part. -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        KITVAULT
+      </a>
+
+      <nav class="nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="customise.html">Customise</a></li>
+          <li><a href="shop.html#size-guide">Size guide</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. The first screen: one headline, one sentence, two buttons. -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="eyebrow">Football shirts, no fakes</p>
+          <h1>Own the shirt.<br>Print the name.</h1>
+          <p class="lede">Real club shirts from a small shop in Helsinki. The price, the stock and the size are on the same page, so you know what you get before you pay.</p>
+
+          <div class="hero-actions">
+            <a class="btn" href="shop.html">Shop the six shirts</a>
+            <a class="btn btn--ghost" href="customise.html">See a printed shirt</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="images/hero-shirt.jpg" width="1200" height="675"
+               alt="A navy and white striped football shirt hanging on a wooden hanger">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Four reasons to buy here, not a page of adjectives. -->
+    <section class="section section--light">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Four reasons to buy here</h2>
+        </div>
+
+        <ul class="reasons">
+          <li>
+            <strong>The chest size is in centimetres.</strong>
+            <span>Measure a shirt you already own, flat, from armpit to armpit. Double it and compare with the size table on the Shop page. No guessing between M and L.</span>
+          </li>
+          <li>
+            <strong>Stock is visible before the bag.</strong>
+            <span>If the card says 3, there are 3 on the shelf. When they are gone the badge turns to sold out, and you can ask to be told when it comes back.</span>
+          </li>
+          <li>
+            <strong>The printing happens in this shop.</strong>
+            <span>Name and number are pressed in Helsinki in two to three working days. If you spell the name wrong, you can still fix it before we print.</span>
+          </li>
+          <li>
+            <strong>One price for every club.</strong>
+            <span>A current shirt is 69 euros and the print is 15. Long names cost the same as short ones, and nothing is added at the last step.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Four shirts. Each link goes to the same page, where the order starts. -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Picked this month</h2>
+          <p>Four shirts from the shelf. The stock number is from this morning at nine.</p>
+        </div>
+
+        <ul class="cards">
+          <li class="card">
+            <span class="badge">12 in stock</span>
+            <h3>Helsinki Blue</h3>
+            <p class="price">&euro;69</p>
+            <p class="meta">Home shirt &#183; 2026 season<br>Sizes: S&#8211;2XL</p>
+            <a class="card-link" href="customise.html">Print a name &rarr;</a>
+          </li>
+
+          <li class="card">
+            <span class="badge badge--low">5 in stock</span>
+            <h3>North White</h3>
+            <p class="price">&euro;69</p>
+            <p class="meta">Away shirt &#183; 2026 season<br>Sizes: M&#8211;XL</p>
+            <a class="card-link" href="customise.html">Print a name &rarr;</a>
+          </li>
+
+          <li class="card">
+            <span class="badge badge--low">3 in stock</span>
+            <h3>Harbour Orange</h3>
+            <p class="price">&euro;74</p>
+            <p class="meta">Third shirt &#183; 2025 season<br>Sizes: M&#8211;L</p>
+            <a class="card-link" href="customise.html">Print a name &rarr;</a>
+          </li>
+
+          <li class="card">
+            <span class="badge badge--out">Sold out</span>
+            <h3>Retro 1998</h3>
+            <p class="price">&euro;59</p>
+            <p class="meta">Replica &#183; 1998 season<br>Sizes: none left</p>
+            <a class="card-link" href="#back-in-stock">Ask when it is back &rarr;</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. The three questions people write e-mails about. -->
+    <section class="section section--light">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What you can check before you pay</h2>
+        </div>
+
+        <ul class="facts">
+          <li>
+            <h3>Stock</h3>
+            <p>The number on each card is the shelf count we do every morning. No countdown and no "only one left" that stays there for a week.</p>
+          </li>
+          <li>
+            <h3>Delivery</h3>
+            <p>Two to five days in Finland, five to nine days in the rest of the EU. Postage is 4.90 and free over 80 euros. We post on Tuesday and Thursday.</p>
+          </li>
+          <li>
+            <h3>The shirts are real</h3>
+            <p>We buy from the club shop or the club's official supplier. A replica from an older season is named as a replica on the card, so nothing is sold as something it is not.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. The form for a size that is gone. -->
+    <section class="section" id="back-in-stock">
+      <div class="wrap form-split">
+        <div>
+          <h2>Sold out in your size?</h2>
+          <p>Leave your e-mail and the size you need. You get one message when the shirt is back on the shelf, and nothing after that.</p>
+          <p class="hint">We keep the address for that one message only. Reply "stop" to any of our messages and it is deleted.</p>
+        </div>
+
+        <!-- action="mailto:" means the button opens the e-mail app with the
+             message ready. There is no server behind this page yet. -->
+        <form class="form" action="mailto:shop@kitvault.fi?subject=Tell%20me%20when%20it%20is%20back" method="post" enctype="text/plain">
+          <div class="field field--full">
+            <label for="email">Your e-mail</label>
+            <input type="email" id="email" name="email" required placeholder="name@example.com">
+            <p class="hint">One address, one message. Nothing else.</p>
+          </div>
+
+          <div class="field field--full">
+            <label for="size">Size you need</label>
+            <select id="size" name="size">
+              <option>S &#8211; chest 88&#8211;92 cm</option>
+              <option>M &#8211; chest 96&#8211;100 cm</option>
+              <option>L &#8211; chest 104&#8211;108 cm</option>
+              <option>XL &#8211; chest 112&#8211;116 cm</option>
+              <option>2XL &#8211; chest 120&#8211;124 cm</option>
+            </select>
+          </div>
+
+          <div class="field field--full">
+            <button class="btn" type="submit">Tell me when it is back</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="wrap">
+        <p class="notice">This is a student version with no server. The button opens your e-mail program with the message already written, and you send it yourself.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-title">KITVAULT</p>
+          <p>Football shirts from Helsinki. Real stock, real sizes, printed in the shop.</p>
+          <p><a href="mailto:shop@kitvault.fi">shop@kitvault.fi</a></p>
+        </div>
+
+        <div>
+          <p class="footer-title">Pages</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="customise.html">Customise</a></li>
+            <li><a href="shop.html#size-guide">Size guide</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-title">Help</p>
+          <ul class="footer-links">
+            <li><a href="mailto:shop@kitvault.fi?subject=Size%20question">Ask about a size</a></li>
+            <li><a href="mailto:shop@kitvault.fi?subject=Return%20or%20postage">Returns and postage</a></li>
+            <li>English &#183; Finnish version coming later</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="made">Made with AI help: the text and the code were drafted with an AI assistant (Doubao), then read, corrected and tested by the student. The plan, the colours and the layout decisions come from the site plan. All three pictures are drawings, not club photos, and all stock numbers and prices are example data for the course project. Every link and anchor was checked with a script on 26 November 2026, and the three pages were opened in the browser.</p>
+
+      <p class="copyright">&copy; 2026 KITVAULT, Helsinki &#183; student project for DIG0011T1AE &#183; no payments are taken on this site</p>
+    </div>
+  </footer>
+</body>
+</html>
+</content>
