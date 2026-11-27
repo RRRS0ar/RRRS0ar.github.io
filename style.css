@@ -1,0 +1,160 @@
+/* style.css - all the styling for the three pages is in this file.
+   Colours: purple #552583, gold #fdb927, dark text #1b1b1b, grey #666666. */
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #1b1b1b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* The box that keeps the text in the middle. */
+.page {
+  width: 760px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* The purple bar at the top of every page. */
+.top {
+  background-color: #552583;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 18px;
+  color: #fdb927;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.top a {
+  margin-right: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top a:hover {
+  color: #fdb927;
+}
+
+h1 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #552583;
+  font-size: 26px;
+}
+
+h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #552583;
+  font-size: 19px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* The picture on every page. */
+img {
+  display: block;
+  max-width: 100%;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  border: 1px solid #cccccc;
+}
+
+/* The table. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th {
+  padding: 8px;
+  background-color: #552583;
+  color: #ffffff;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* The lists. */
+ul, ol {
+  margin-top: 8px;
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* The button. */
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  background-color: #fdb927;
+  color: #1b1b1b;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #fdb927;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #552583;
+  border-color: #552583;
+}
+
+/* Small grey text: photo credits and notes. */
+.note {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* The footer. */
+.footer {
+  margin-top: 30px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #dddddd;
+  color: #666666;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #552583;
+}
+
+/* On a small screen the logo goes on its own line. */
+@media (max-width: 620px) {
+
+  .logo {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+}
